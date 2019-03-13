@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3用户界面</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        div.container {
+            width: 100%;
+            border: 1em solid;
+        }
+
+        div.box {
+            box-sizing: border-box;
+            width: 50%;
+            border: 1em solid red;
+            float: left;
+        }
+
+        div.outline {
+            -webkit-appearance: button;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            outline: 1px solid crimson;
+            outline-offset: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>css3用户界面</h2>
+<hr/>
+<div class="container"></div>
+<div class="box">这个div占据左半部分</div>
+<div class="box">这个div占据右半部分</div>
+<hr/>
+<div class="outline">这个div外围20px有轮廓，轮廓不占用空间，可为非矩形</div>
+</body>
+</html>

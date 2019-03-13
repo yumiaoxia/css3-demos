@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3过渡效果</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        div.common {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+
+        div.div1 {
+            transition: width 2s;
+        }
+
+        div.div1:hover {
+            width: 300px;
+        }
+
+        .div2 {
+            transition: width 2s, height 1s, transform 5s;
+        }
+
+        div.div2:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+<h2>css3过渡效果</h2>
+<hr/>
+<div class="common div1"></div>
+<p>请把指针放到黄色的div元素上，来查看过渡效果</p>
+<p><b>注释：</b>本例在IE中无效</p>
+<div class="common div2"></div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 背景</title>
+</head>
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    div.size {
+        background: url("../assets/img/bg_flower.gif");
+        background-size: 63px 100px;
+        background-repeat: no-repeat;
+        padding-top: 80px;
+    }
+
+    div.no-repeat {
+        background: url("../assets/img/bg_flower.gif");
+        background-size: 35% 100%;
+        background-repeat: no-repeat;
+    }
+
+    div.origin {
+        border: 1px solid black;
+        padding: 35px;
+        background-image: url("../assets/img/bg_flower.gif");
+        background-repeat: no-repeat;
+    }
+
+    div.content {
+        background-origin: content-box;
+    }
+
+    div.border {
+        background-origin: border-box;
+    }
+
+    div.padding {
+        background-origin: padding-box;
+    }
+
+    div.mutiimg {
+        border: 1px solid black;
+        height: 300px;
+        width: 100%;
+        background-image: url("../assets/img/bg_flower.gif"), url("../assets/img/bg_flower_2.gif");
+    }
+</style>
+<body>
+<h2>css3 背景</h2>
+<hr/>
+<h3>原始图片</h3>
+<img src="../assets/img/bg_flower.gif" alt="原始背景图片"/>
+<h3>缩小的图片</h3>
+<div class="size"></div>
+<h3>图片拉伸铺满区域</h3>
+<div class="no-repeat">
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+    <p>这是段落</p>
+</div>
+<h3>background-origin:content-box</h3>
+<div class="origin content">这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+</div>
+<h3>background-origin:border-box</h3>
+<div class="origin border">这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+</div>
+<h3>background-origin:padding-box</h3>
+<div class="origin padding">这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+    这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本 这是文本
+</div>
+<h3>多重背景图片</h3>
+<div class="mutiimg"></div>
+</body>
+</html>

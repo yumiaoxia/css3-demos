@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3边框</title>
+    <style type="text/css">
+        h2 {
+            text-align: center;
+        }
+
+        div.radius {
+            text-align: center;
+            border: 2px solid;
+            padding: 10px 40px;
+            background: #DDDDDD;
+            width: 35px;
+            border-radius: 25px;
+            -moz-border-radius: 25px;
+        }
+
+        div.shadow {
+            width: 300px;
+            height: 100px;
+            background-color: #ff9900;
+            -moz-box-shadow: 10px 10px 10px 5px #888888;
+            box-shadow: 10px 10px 10px 5px #888888;
+        }
+
+        div.img {
+            border: 15px solid transparent;
+            width: 300px;
+            padding: 10px 20px;
+        }
+
+        div.space {
+            border-image: url("../assets/img/border.png") 30 30 space;
+        }
+
+        div.round {
+            border-image: url("../assets/img/border.png") 30 30 round;
+        }
+
+        div.stretch {
+            border-image: url("../assets/img/border.png") 30 30 stretch;
+        }
+    </style>
+</head>
+<body>
+<h3>圆角边框</h3><br/>
+<div class="radius">边框</div>
+<hr/>
+<h3>边框阴影</h3><br/>
+<div class="shadow"></div>
+<hr/>
+<h3>图片环绕边框，IE不支持</h3><br/>
+<img src="../assets/img/border.png"" alt="原始图片">
+<div class="img space"></div>
+<div class="img round">图片铺满边框</div>
+<div class="img stretch">图片拉伸</div>
+</body>
+</html>
